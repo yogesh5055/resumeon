@@ -1,0 +1,252 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.hero-container {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ff8a00, #ffcc00);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: linear-gradient(to right, #ff8a00, #ffcc00);
+  color: black;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: linear-gradient(to right, #ffcc00, #ff8a00);
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  padding: 80px 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.features-title {
+  font-size: 2.8rem;
+  background: linear-gradient(to right, #ff8a00, #ffcc00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Call to Action */
+.cta {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ff8a00, #ffcc00);
+  color: black;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background: #111;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  width: 100%;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.reviews-container {
+  text-align: center;
+  margin: 50px 0;
+  overflow: hidden;
+  margin-top: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.reviews-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff8a00;
+  margin-bottom: 30px;
+
+}
+
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.review-card {
+  background: #1e293b;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  white-space: normal;
+  margin-right: 80px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  display: inline-block;
+}
+
+.user-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.review-info h3 {
+  font-size: 1.2rem;
+}
+
+.linkedin-icon {
+  font-size: 1.5rem;
+  color: #0077b5;
+  transition: 0.3s;
+}
+
+.linkedin-icon:hover {
+  color: #005582;
+}
+
+.mm {
+  width: 100%;  /* Ensures it takes up full width of the parent container */
+  display: flex;
+  flex-direction: column;  /* Stacks text vertically */
+  align-items: flex-start; /* Left-aligns text */
+  justify-content: flex-start; /* Ensures text starts from the top */
+  padding: 15px; /* Adds space around the text */
+  height: auto;  /* Lets the container grow with content */
+}
+
+.review-text {
+  font-style: italic;
+  margin-top: 10px;
+  text-align: left; /* Left-aligns the text */
+  opacity: 0.9;
+  line-height: 1.6;  /* Adds spacing between lines for readability */
+  margin-top: 20px;
+  width: 100%; /* Makes sure the text uses full available width */
+  word-wrap: break-word; /* Breaks long words to prevent overflow */
+  white-space: normal; /* Allows text to wrap onto the next line */
+}
+
+
+

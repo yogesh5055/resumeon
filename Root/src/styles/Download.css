@@ -1,0 +1,66 @@
+/* Download Page Container */
+.download-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   background: #0f172a;
+ /* Light gray background */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.download-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2C3E50; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+/* Description Text */
+.download-text {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.download-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Download Buttons */
+.download-btn {
+    background-color: #2C3E50; /* Dark Blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #1A252F; /* Darker Shade */
+}
+
+/* Back Button */
+.back-btn {
+    margin-top: 20px;
+    background-color: #E74C3C; /* Red */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #C0392B; /* Darker Red */
+}
